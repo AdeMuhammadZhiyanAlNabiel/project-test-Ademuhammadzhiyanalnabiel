@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Ideas</title>
+</head>
+<body>
+    <header>
+        <div class="header-menu" id="header-main">
+            <img src="./images/suitmedia_logo_orangeBase.png" alt="logo-image">
+            <nav class="head-nav">
+                <a title="Work" href="#">Work</a>
+                <a title="About" href="#">About</a>
+                <a title="Services" href="#">Services</a>
+                <a title="Ideas" id="ideas-nav" href="#">Ideas</a>
+                <a title="Careers" href="#">Careers</a>
+                <a title="Contact" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-section">
+        <div class="banner-textcontainer">
+            <h1>Ideas</h1>
+            <h3>Where all our greats things begin</h3>
+        </div>
+        <div class="deselement"></div>
+    </section>
+
+    <section class="content-section">
+        <div class="main-content">
+            <div class="filter-container">
+                <p id="keterangan-page">Showing 0 of 100</p>
+                <form id="filterform">
+                    <div class="filter">
+                        <label for="vpp">Show per page: </label>
+                        <select name="vpp" id="viewperpage">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <label for="sort">Sort by: </label>
+                        <select name="sort" id="orderby">
+                            <option value="-published_at">Newest</option>
+                            <option value="published_at">Oldest</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div id="container-content" class="content-10">
+            </div>
+
+            <div class="page-navigator">
+                <a id="doubleback">&#x276C;&#x276C;</a>
+                <a id="back">&#x276C;</a>
+                <div class="pagenumber-container" id="pgnumid"></div>
+                <a id="next">&#x276D;</a>
+                <a id="doublenext">&#x276D;&#x276D;</a>
+            </div>            
+        </div>
+    </section>
+
+    <script src="./JS/header.js"></script>
+    <script src="./JS/content.js"></script>
+</body>
+</html>
